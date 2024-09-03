@@ -1,4 +1,4 @@
-
+@import url(https://fonts.googleapis.com/css?family=SUSE:100,200,300,regular,500,600,700,800);
 
 *{
     box-sizing: border-box;
@@ -185,7 +185,7 @@ hr:last-of-type{
     margin-bottom: -20px;
 }
 
-@import url(https://fonts.googleapis.com/css?family=SUSE:100,200,300,regular,500,600,700,800);
+
 
 
 @keyframes warning {
