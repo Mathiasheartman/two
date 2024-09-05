@@ -1,201 +1,80 @@
-@import url(https://fonts.googleapis.com/css?family=SUSE:100,200,300,regular,500,600,700,800);
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-wrapper">
+        <div class="profile">
+          <img class="profile-pic" src="/img/profile-pic.jpg" alt="profile-pic">
+          <div>
+            <h4>Mathias Heartman</h4>
+            <p>Website developer</p>
+          </div>
+        </div>
+        <hr>
+        <div class="personal">
+          <img class="personal-img" src="/img/Personal.png">
+          <a href="">
+            <p>Personal Data</p>
+            <p>></p>
+          </a>
+        </div>
+        <div class="message">
+          <img class="message-img" src="/img/Messaging.png">
+          <a href="">
+            <p>Messages</p>
+            <p>></p>
+          </a>
+        </div>
+        <div class="notification">
+          <img class="notification-img" src="/img/Notifocation.png">
+          <a href="">
+            <p>Notifications</p>
+            <p>></p>
+          </a>
+        </div>
+        <div class="location">
+          <img class="location-img" src="/img/Location.png">
+          <a href="">
+            <p>Location</p>
+            <p>></p>
+          </a>
+        </div>
+        <div class="community">
+          <img class="community-img" src="/img/Community.png">
+          <a href="">
+            <p>Community</p>
+            <p>></p>
+          </a>
+        </div>
+        <hr>
+        <div class="faq">
+          <img class="faq-img" src="/img/Personal.png">
+          <a href="">
+            <p>FAQs</p>
+            <p>></p>
+          </a>
+        </div>
+        <div class="setting">
+          <img class="setting-img" src="/img/Setting.png">
+          <a href="">
+            <p>Settings</p>
+            <p>></p>
+          </a>
+        </div>
+        <div class="nav-bar">
+          <a href="/home.html"><img class="home-img" src="/img/Home.png" alt="home"></a>
+          <a href="/activities.html"><img class="activity-img" src="/img/Activity.png" alt="Activity"></a>
+          <a href="/inbox.html"><img class="message-nav-img" src="/img/Message-nav.png" alt=""></a>
+          <a href="index.html"><img class="profile-img profile-img-home" src="/img/Profile.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </body>
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-::before,
-::after{
-    box-sizing: inherit;
-}
-body{
-    background-image: url(/img/Background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: #5e1c1c;
-    font-family: 'SUSE';
-}
-a{
-    text-decoration: none;
-}
-
-
-
-.container{
-    width: 280px;
-    height: 530px;
-    margin: 40px auto 0;
-    background-color: #e6e6e6e0;
-    border-radius: 25px;
-    box-shadow: 0 0 4px inset;
-}
-.container-wrapper{
-    padding: 10px 18px 15px;
-}
-.profile{
-    display: flex;
-    gap: 15px;
-    padding-block: 20px;
-}
-.profile-pic{
-    width: 40px;
-    border-radius: 7px;
-}
-.profile p{
-    font-size: 13px;
-    font-weight: 700;
-    color: #999999;
-}
-
-.personal a,
-.message a,
-.notification a,
-.location a,
-.community a,
-.faq a,
-.setting a{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 0 27.5px 33px;
-    color: black;
-    font-weight: 700;
-}
-hr:first-of-type{
-    margin-bottom: 20px;
-}
-hr:last-of-type{
-    margin-block: 20px;
-}
-.personal a:hover,
-.message a:hover,
-.notification a:hover,
-.location a:hover,
-.community a:hover,
-.faq a:hover,
-.setting a:hover{
-    color: #5e1c1c;
-}
-.personal-img{
-    position: absolute;
-    top: 146px;
-    background-color: #e6e5e5;
-    border-radius: 4px;
-    padding: 5px;
-    width: 25px;
-    height: 25px;
-}
-.message-img{
-    position: absolute;
-    top: 192px;
-    background-color: #e6e5e5;
-    border-radius: 4px;
-    padding: 5px;
-    width: 25px;
-    height: 25px;
-}
-.notification-img{
-    position: absolute;
-    top: 236px;
-    background-color: #e6e5e5;
-    border-radius: 4px;
-    padding: 5px;
-    width: 25px;
-    height: 25px;
-}
-.location-img{
-    position: absolute;
-    top: 282px;
-    background-color: #e6e5e5;
-    border-radius: 4px;
-    padding: 5px;
-    width: 25px;
-    height: 25px;
-}
-.community-img{
-    position: absolute;
-    top: 326px;
-    background-color: #e6e5e5;
-    border-radius: 4px;
-    padding: 5px;
-    width: 25px;
-    height: 25px;
-}
-.faq-img{
-    position: absolute;
-    top: 393px;
-    background-color: #e6e5e5;
-    border-radius: 4px;
-    padding: 5px;
-    width: 25px;
-    height: 25px;
-}
-.setting-img{
-    position: absolute;
-    top: 438px;
-    background-color: #e6e5e5;
-    border-radius: 4px;
-    padding: 5px;
-    width: 25px;
-    height: 25px;
-}
-.nav-bar{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 65px;
-}
-.nav-bar-home{
-    display: flex;
-    justify-content: space-between;
-    width: 71.5%;
-    margin: 466px auto 0;
-}
-.home-img,
-.activity-img,
-.message-nav-img,
-.profile-img{
-    width: 18px;
-    height: 18px;  
-    opacity: 40%;  
-}
-.profile-img-home,
-.message-nav-img-home,
-.home-img-home,
-.activity-img-home{
-    background-color: #8d8c8c;
-    padding: 2px;
-    border-radius: 4px;
-}
-.warning{
-    position: relative;
-    top: 220px;
-    left: 112px;
-    width: 50px;
-    height: 50px;
-    margin-bottom: -40px;
-    animation: warning 1s ease infinite;
-}
-.unable{
-    position: relative;
-    top: 280px;
-    left: 85px;
-    font-weight: 600;
-    opacity: 50%;
-    margin-bottom: -20px;
-}
-
-
-
-
-@keyframes warning {
-    0%{
-        transform: scale(0.8) rotate(-10deg);
-    }
-    50%{
-        transform: scale(1) rotate(10deg);
-    }   
-    100%{
-        transform: scale(0.8) rotate(-10deg);
-    }
-}
+</html>
